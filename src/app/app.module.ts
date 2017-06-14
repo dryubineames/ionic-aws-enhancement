@@ -8,6 +8,7 @@ import { AwsConfig } from './app.config';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import {PasswordResetPage} from '../pages/passwordreset/passwordreset';
+import {ChangePasswordPage} from '../pages/changepassword/changepassword';
 import { SignupPage } from '../pages/signup/signup';
 import { ConfirmPage } from '../pages/confirm/confirm';
 import { SettingsPage } from '../pages/settings/settings';
@@ -30,6 +31,7 @@ import { DynamoDB } from '../providers/aws.dynamodb';
     MyApp,
     LoginPage,
     PasswordResetPage,
+    ChangePasswordPage,
     SignupPage,
     ConfirmPage,
     SettingsPage,
@@ -48,6 +50,7 @@ import { DynamoDB } from '../providers/aws.dynamodb';
     MyApp,
     LoginPage,
     PasswordResetPage,
+    ChangePasswordPage,
     SignupPage,
     ConfirmPage,
     SettingsPage,
