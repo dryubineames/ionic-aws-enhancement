@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 declare var AWS: any;
-declare const aws_mobile_analytics_app_id;
+declare const aws_mobile_analytics_app_id; //aws_mobile_analytics_app_id
 declare const aws_cognito_region;
 declare const aws_cognito_identity_pool_id;
 declare const aws_user_pools_id;

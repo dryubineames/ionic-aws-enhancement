@@ -171,8 +171,8 @@ export class User {
     });
   }
 
-  updatePassword(username: string, oldPwd: string, newPwd: string) {
-    console.log(`user service updating password for ${username}`);
+  updatePassword(oldPwd: string, newPwd: string) {
+    console.log(`user service updating password`);
 
     return new Promise((resolve, reject) => {
       //const authenticationDetails = this.cognito.makeAuthDetails(username, oldPwd);

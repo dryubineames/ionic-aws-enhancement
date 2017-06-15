@@ -13,7 +13,6 @@ import { User } from '../../providers/providers';
 export class ChangePasswordPage {
 
     passwordUpdate = {
-        "username" : '',
         "oldPwd" : '',
         "newPwd0" : null,
         "newPwd1" : null
@@ -27,10 +26,10 @@ export class ChangePasswordPage {
     changePassword() {
 
      console.log('changePassword();')
-     console.log(`updating password for username: ${this.passwordUpdate.username}`);
+     console.log(`updating password}`);
      this.error = null; // reset the error object
 
-     this.user.updatePassword(this.passwordUpdate.username, this.passwordUpdate.oldPwd, 
+     this.user.updatePassword(this.passwordUpdate.oldPwd, 
      this.passwordUpdate.newPwd0).then( (result) => {
          this.navCtrl.push(TabsPage);
      }).catch ((err) => {
